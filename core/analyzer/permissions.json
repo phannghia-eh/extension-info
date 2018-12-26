@@ -1,0 +1,337 @@
+{
+  "activeTab": {
+    "description": "Requests that the extension be granted permissions according to the activeTab specification.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "alarms": {
+    "description": "Gives your extension access to the chrome.alarms API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "background": {
+    "description": "Makes Chrome start up early and and shut down late, so that apps and extensions can have a longer life.\nWhen any installed hosted app, packaged app, or extension has \"background\" permission, Chrome runs (invisibly) as soon as the user logs into their computer—before the user launches Chrome. The \"background\" permission also makes Chrome continue running (even after its last window is closed) until the user explicitly quits Chrome.\nNote: Disabled apps and extensions are treated as if they aren't installed.\nYou typically use the \"background\" permission with a background page, event page or (for hosted apps) a background window.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "bookmarks": {
+    "description": "Gives your extension access to the chrome.bookmarks API.",
+    "isWarning": true,
+    "warning": "Read and change your bookmarks"
+  },
+  "browsingData": {
+    "description": "Gives your extension access to the chrome.browsingDataAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "certificateProvider": {
+    "description": "Gives your extension access to the chrome.certificateProvider API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "clipboardRead": {
+    "description": "Required if the extension or app uses document.execCommand('paste').",
+    "isWarning": true,
+    "warning": "Read data you copy and paste"
+  },
+  "clipboardWrite": {
+    "description": "Indicates the extension or app uses document.execCommand('copy') or document.execCommand('cut'). This permission is required for hosted apps; it's recommended for extensions and packaged apps.",
+    "isWarning": true,
+    "warning": "Modify data you copy and paste"
+  },
+  "contentSettings": {
+    "description": "Gives your extension access to the chrome.contentSettings API.",
+    "isWarning": true,
+    "warning": "Change your settings that control websites' access to features such as cookies, JavaScript, plugins, geolocation, microphone, camera etc."
+  },
+  "contextMenus": {
+    "description": "Gives your extension access to the chrome.contextMenusAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "cookies": {
+    "description": "Gives your extension access to the chrome.cookies API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "debugger": {
+    "description": "Gives your extension access to the chrome.debugger API.",
+    "isWarning": true,
+    "warning": "Access the page debugger backend\nRead and change all your data on the websites you visit"
+  },
+  "declarativeContent": {
+    "description": "Gives your extension access to the chrome.declarativeContent API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "declarativeNetRequest": {
+    "description": "Gives your extension access to the chrome.declarativeNetRequest API.",
+    "isWarning": true,
+    "warning": "Block page content"
+  },
+  "declarativeWebRequest": {
+    "description": "Gives your extension access to the chrome.declarativeWebRequest API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "desktopCapture": {
+    "description": "Gives your extension access to the chrome.desktopCapture API.",
+    "isWarning": true,
+    "warning": "Capture content of your screen"
+  },
+  "displaySource": {
+    "description": "Gives your extension access to the chrome.displaySourceAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "dns": {
+    "description": "Gives your extension access to the chrome.dns API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "documentScan": {
+    "description": "Gives your extension access to the chrome.documentScanAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "downloads": {
+    "description": "Gives your extension access to the chrome.downloads API.",
+    "isWarning": true,
+    "warning": "Manage your downloads"
+  },
+  "enterprise.deviceAttributes": {
+    "description": "Gives your extension access to the chrome.enterprise.deviceAttributes API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "enterprise.hardwarePlatform": {
+    "description": "Gives your extension access to the chrome.enterprise.hardwarePlatform API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "enterprise.platformKeys": {
+    "description": "Gives your extension access to the chrome.enterprise.platformKeys API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "experimental": {
+    "description": "Required if the extension or app uses any chrome.experimental.* APIs.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "fileBrowserHandler": {
+    "description": "Gives your extension access to the chrome.fileBrowserHandler API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "fileSystemProvider": {
+    "description": "Gives your extension access to the chrome.fileSystemProvider API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "fontSettings": {
+    "description": "Gives your extension access to the chrome.fontSettingsAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "gcm": {
+    "description": "Gives your extension access to the chrome.gcm API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "geolocation": {
+    "description": "Allows the extension or app to use the proposed HTML5 geolocation API without prompting the user for permission.",
+    "isWarning": true,
+    "warning": "Detect your physical location"
+  },
+  "history": {
+    "description": "Gives your extension access to the chrome.history API.",
+    "isWarning": true,
+    "warning": "Read and change your browsing history"
+  },
+  "identity": {
+    "description": "Gives your extension access to the chrome.identity API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "idle": {
+    "description": "Gives your extension access to the chrome.idle API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "idltest": {
+    "description": "Gives your extension access to the chrome.idltest API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "management": {
+    "description": "Gives your extension access to the chrome.managementAPI.",
+    "isWarning": true,
+    "warning": "Manage your apps, extensions, and themes"
+  },
+  "nativeMessaging": {
+    "description": "Gives your extension access to the native messaging API.",
+    "isWarning": true,
+    "warning": "Communicate with cooperating native applications"
+  },
+  "networking.config": {
+    "description": "Gives your extension access to the chrome.networking.config API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "notifications": {
+    "description": "Gives your extension access to the chrome.notificationsAPI.",
+    "isWarning": true,
+    "warning": "Display notifications"
+  },
+  "pageCapture": {
+    "description": "Gives your extension access to the chrome.pageCaptureAPI.",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "platformKeys": {
+    "description": "Gives your extension access to the chrome.platformKeysAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "power": {
+    "description": "Gives your extension access to the chrome.power API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "printerProvider": {
+    "description": "Gives your extension access to the chrome.printerProvider API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "privacy": {
+    "description": "Gives your extension access to the chrome.privacy API.",
+    "isWarning": true,
+    "warning": "Change your privacy-related settings"
+  },
+  "processes": {
+    "description": "Gives your extension access to the chrome.processes API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "proxy": {
+    "description": "Gives your extension access to the chrome.proxy API.",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "sessions": {
+    "description": "Gives your extension access to the chrome.sessions API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "signedInDevices": {
+    "description": "Gives your extension access to the chrome.signedInDevices API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "storage": {
+    "description": "Gives your extension access to the chrome.storage API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "system.cpu": {
+    "description": "Gives your extension access to the chrome.system.cpu API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "system.display": {
+    "description": "Gives your extension access to the chrome.system.displayAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "system.memory": {
+    "description": "Gives your extension access to the chrome.system.memory API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "system.storage": {
+    "description": "Gives your extension access to the chrome.system.storageAPI.",
+    "isWarning": true,
+    "warning": "Identify and eject storage devices"
+  },
+  "tabCapture": {
+    "description": "Gives your extension access to the chrome.tabCapture API.",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "tabs": {
+    "description": "Gives your extension access to privileged fields of the Tabobjects used by several APIs including chrome.tabs and chrome.windows. In many circumstances your extension will not need to declare the \"tabs\" permission to make use of these APIs.",
+    "isWarning": true,
+    "warning": "Read your browsing history"
+  },
+  "topSites": {
+    "description": "Gives your extension access to the chrome.topSites API.",
+    "isWarning": true,
+    "warning": "Read a list of your most frequently visited websites"
+  },
+  "tts": {
+    "description": "Gives your extension access to the chrome.tts API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "ttsEngine": {
+    "description": "Gives your extension access to the chrome.ttsEngine API.",
+    "isWarning": true,
+    "warning": "Read all text spoken using synthesized speech"
+  },
+  "unlimitedStorage": {
+    "description": "Provides an unlimited quota for storing HTML5 client-side data, such as databases and local storage files. Without this permission, the extension or app is limited to 5 MB of local storage.\nNote: This permission applies only to Web SQL Database and application cache (see issue 58985). Also, it doesn't currently work with wildcard subdomains such as http://*.example.com.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "vpnProvider": {
+    "description": "Gives your extension access to the chrome.vpnProviderAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "wallpaper": {
+    "description": "Gives your extension access to the chrome.wallpaper API.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "webNavigation": {
+    "description": "Gives your extension access to the chrome.webNavigationAPI.",
+    "isWarning": true,
+    "warning": "Read your browsing history"
+  },
+  "webRequest": {
+    "description": "Gives your extension access to the chrome.webRequestAPI.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "webRequestBlocking": {
+    "description": "Required if the extension uses the chrome.webRequest API in a blocking fashion.",
+    "isWarning": false,
+    "warning": "None"
+  },
+  "http://*/*": {
+    "description": "Grants the extension access to all hosts. ",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "https://*/*": {
+    "description": "Grants the extension access to all hosts. ",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "*://*/*": {
+    "description": "Grants the extension access to all hosts. ",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "<all_urls>": {
+    "description": "Grants the extension access to all hosts. ",
+    "isWarning": true,
+    "warning": "Read and change all your data on the websites you visit"
+  },
+  "https://HostName.com/": {
+    "description": "Grants the extension access to \"https://HostName.com/\".",
+    "isWarning": true,
+    "warning": "Read and change your data on HostName.com"
+  }
+}

@@ -1,0 +1,27 @@
+ERROR:root:
+----------------------
+lpcaedmchfhocbbapmcbpinfpgnhiddi?hl=vi:download\google-keep-chrome-extens
+Traceback (most recent call last):
+  File "E:\Projects\extension-info-backend\core\analyzer\GLib.py", line 202, in ExtensionAnalyzer
+    manifest_output = ManifestParser(manifest_file)
+  File "E:\Projects\extension-info-backend\core\analyzer\GLib.py", line 131, in ManifestParser
+    with open('permissions.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'permissions.json'
+ERROR:root:
+----------------------
+lpcaedmchfhocbbapmcbpinfpgnhiddi?hl=vi:download\google-keep-chrome-extens
+Traceback (most recent call last):
+  File "E:\Projects\extension-info-backend\core\analyzer\GLib.py", line 202, in ExtensionAnalyzer
+    manifest_output = ManifestParser(manifest_file)
+  File "E:\Projects\extension-info-backend\core\analyzer\GLib.py", line 131, in ManifestParser
+    with open('permissions.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'permissions.json'
+ERROR:root:
+----------------------
+lpcaedmchfhocbbapmcbpinfpgnhiddi?hl=vi:download\google-keep-chrome-extens
+Traceback (most recent call last):
+  File "E:\Projects\extension-info-backend\core\analyzer\GLib.py", line 209, in ExtensionAnalyzer
+    result = APIParser(js, found)
+  File "E:\Projects\extension-info-backend\core\analyzer\GLib.py", line 144, in APIParser
+    with open('api.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'api.json'

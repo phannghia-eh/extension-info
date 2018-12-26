@@ -1,0 +1,174 @@
+{
+  "addEventListener(\"keypress": {
+    "behavior": "Capture all events related to user's keypress, might potentially capture user's sensitive information, e.g. credentials without user acknowledgement.",
+    "risk": "High risk"
+  },
+  "addEventListener(\"keydown": {
+    "behavior": "Capture all events related to user's keypress, might potentially capture user's sensitive information, e.g. credentials without user acknowledgement.",
+    "risk": "High risk"
+  },
+  "XMLHttpRequest": {
+    "behavior": "Connect to an external source, might potentially send user's sensitive data to a malicious server. Besides, this API is also used to inject advertisements in some cases. ",
+    "risk": "Medium risk"
+  },
+  "chrome.tabs.executeScript": {
+    "behavior": "Might execute malicious code. Besides, if user-controlled input is wrongly passed in the code property of the details parameter, Cross-site Scripting (XSS) can occur ",
+    "risk": "Medium risk"
+  },
+  "chrome|tabs|executeScript|onUpdated": {
+    "behavior": "Might execute malicious code. Besides, if user-controlled input is wrongly passed in the code property of the details parameter, Cross-site Scripting (XSS) can occur ",
+    "risk": "Medium risk"
+  },
+  "chrome.tabs.update": {
+    "behavior": "When the url property of the updateProperties argument is controlled by an attacker, Cross-site Scripting (XSS) can occur",
+    "risk": "Medium risk"
+  },
+  "chrome.management.getAll AND chrome.management.uninstall": {
+    "behavior": "Potentially uninstall all installed extensions",
+    "risk": "Low risk"
+  },
+  "document.getElementById(\"username\").value": {
+    "behavior": "Potentially steal user's credential",
+    "risk": "High risk"
+  },
+  "document.getElementById(\"password\").value": {
+    "behavior": "Potentially steal user's credential",
+    "risk": "High risk"
+  },
+  "chrome.webRequest.onHeadersReceived.addListener AND info.responseHeaders": {
+    "behavior": "Might bypass some security measures (by deleting security-related HTTP headers)",
+    "risk": "Medium risk"
+  },
+  "document.images.src": {
+    "behavior": "Might insert or modify original source of images",
+    "risk": "Low risk"
+  },
+  "chrome.cookies.getAll": {
+    "behavior": "Might steal all cookies",
+    "risk": "High risk"
+  },
+  "chrome.cookies.set": {
+    "behavior": "Might add, modify cookie values on specific site, if that site is vulnerable to Cross-Site Scripting (XSS) based on the cookies, XSS attack can occur by injecting payload into cookies.",
+    "risk": "High risk"
+  },
+  "chrome.bookmarks.remove": {
+    "behavior": "Might delete all user's bookmarks",
+    "risk": "Low risk"
+  },
+  "chrome.bookmarks.removeTree": {
+    "behavior": "Might delete all user's bookmarks",
+    "risk": "Low risk"
+  },
+  "chrome.history.deleteAll": {
+    "behavior": "Might delete all user's browsing history",
+    "risk": "Low risk"
+  },
+  "chrome.history.search": {
+    "behavior": "Might steal user's browsing history (i.e., for advertising purpose or extract URLs with sensitive information)",
+    "risk": "Medium risk"
+  },
+  "chrome.browsingData.remove": {
+    "behavior": "Might purge all user's browsing data (including history, downloaded files, saved passwords, cookies, autofill entries)",
+    "risk": "Low risk"
+  },
+  "chrome.idle": {
+    "behavior": "Might be used to determine the time for the next attacking attempt based on whether or not the user is using the browser",
+    "risk": "Low risk"
+  },
+  "chrome.pageCapture": {
+    "behavior": "Might capture the current page, which could include sensitive information",
+    "risk": "Medium risk"
+  },
+  "chrome.tts.speak": {
+    "behavior": "Might be used to scare the user to provided some of their information, believing that their computer is haunted",
+    "risk": "Low risk"
+  },
+  "eval": {
+    "behavior": "When user-controlled input is wrongly passed in to eval, Cross-site Scripting (XSS) can occur",
+    "risk": "High risk"
+  },
+  ".appendTo": {
+    "behavior": "jQuery .appendTo() when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".html": {
+    "behavior": "jQuery .html() when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".wrap": {
+    "behavior": "jQuery .wrap() when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".after": {
+    "behavior": "jQuery .after() when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".append": {
+    "behavior": "jQuery .append() when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".insertAfter": {
+    "behavior": "jQuery .insertAfter() when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".attr('href": {
+    "behavior": "jQuery .attr(\"href\") when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "Medium risk"
+  },
+  ".innerHTML": {
+    "behavior": "jQuery .innerHTML when combined with user-controlled input could lead to Cross-site Scripting (XSS) ",
+    "risk": "High risk"
+  },
+  ".setAttribute('src": {
+    "behavior": ".setAttribute('src') when combined with user-controlled input and an iframe src could lead to Cross-site Scripting (XSS) via javascript: URI",
+    "risk": "Medium risk"
+  },
+  "Handlebars.SafeString": {
+    "behavior": "When user-controlled input is unsafely passed with HTML markup to SafeString, Cross-site Scripting (XSS) can occur",
+    "risk": "Medium risk"
+  },
+  ".prepend": {
+    "behavior": "jQuery .prepend() when combined with user-controlled input could lead to Cross-site Scripting (XSS)",
+    "risk": "Medium risk"
+  },
+  ".insertBefore": {
+    "behavior": "jQuery .insertBefore() when combined with user-controlled input could lead to Cross-site Scripting (XSS)",
+    "risk": "Medium risk"
+  },
+  "chrome.webRequest": {
+    "behavior": "Might be used to intercept and modify outgoing traffic;\n\nWith webRequest permission: Might Read and Write sensitive data;\n\nWith webRequestBlocking: Might modify traffic",
+    "risk": "Medium risk"
+  },
+  "chrome.runtime": {
+    "behavior": "Might be used to provide needed hook for executing code when Chrome restart or update extension\nWhen combined with nativeMessaging permission, Native messaging host could be used to execute OS commands",
+    "risk": "Medium risk"
+  },
+  "chrome.debugger": {
+    "behavior": "Might be used to intercept and modify traffic",
+    "risk": "Medium risk"
+  },
+  "chrome.proxy": {
+    "behavior": "Might redirect website traffic of user to a malicious proxy, for Man in the Middle purpose",
+    "risk": "High risk"
+  },
+  "\"constructor\"[\"constructor\"][\"constructor\"]": {
+    "behavior": "Might be used to hide eval usage",
+    "risk": "High risk"
+  },
+  "chrome.browserAction": {
+    "behavior": "Might monitor browserAction popup, insert data into popup, modify data on popup or popup action",
+    "risk": "Low risk"
+  },
+  "chrome.browsingData.removeCache": {
+    "behavior": "Might delete browser caches to perform Man in the Middle, such as AppCache poisoning",
+    "risk": "Medium risk"
+  },
+  "chrome.extension.getBackgroundPage": {
+    "behavior": "Might be used to support persistence of the attack",
+    "risk": "Medium risk"
+  },
+  "chrome.extension.getViews": {
+    "behavior": "Might be used to support persistence of the attack",
+    "risk": "Medium risk"
+  }
+}
